@@ -1,0 +1,65 @@
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;        
+    color: ghostwhite;
+
+    &__primary{
+      margin-top: 7rem;
+
+      &__location{
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        margin-top: -4rem;
+        margin-bottom: 7rem;
+      }
+
+      &__temperature{
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 1rem;
+      }
+
+      &__description{
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+
+    &__secondary{
+      backdrop-filter: blur(0.2rem);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 80vw;
+      max-width: 40rem;
+      margin-top: 7rem;
+      margin-bottom: 5rem;
+      padding: 1.2rem;
+      text-align: center;
+      gap: 1rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+
+      &__termal__text, &__humidity__text, &__pressure__text , &__wind__text{
+        width: 7rem;
+        font-size: 1.1rem;
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+      }
+
+      &__termal__value, &__humidity__value, &__pressure__value , &__wind__value{
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+}
+  
